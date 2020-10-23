@@ -41,3 +41,9 @@ body {
 .form-control {
     background-color: rgb(213, 212, 255);
 }
+/* .res-table{
+    background-color: yellow;
+} */
+.res-btn{
+    background-color: gray;
+}
