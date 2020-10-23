@@ -34,4 +34,10 @@ body {
     background-color: #9457ce;
 }
 
+.btn-group {
+    margin-bottom: 25px;
+}
 
+.form-control {
+    background-color: rgb(213, 212, 255);
+}
