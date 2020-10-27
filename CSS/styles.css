@@ -37,6 +37,20 @@ body {
     border-right: 1px solid #ddd;
     padding: 10px;
 }
+.carousel {
+    background:rgb(198, 135, 230);
+}
+
+.carousel-item {
+  height: 300px;
+}
+
+.carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 300px;
+}
 .navbar-dark {
     background-color: #9457ce;
 }
