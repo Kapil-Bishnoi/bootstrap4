@@ -110,7 +110,7 @@
                     <li class="nav-item active"><a class="nav-link " href="./about-us.html"><span class="fa fa-info fa-lg"></span> About</a></li>
                     <li class="nav-item "><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
                     <li class="nav-item "><a class="nav-link" href="./contact-us.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
-                    <li class="nav-item "><a class="nav-link" style="cursor: pointer;" data-toggle="modal" data-target="#loginModal"><i class="fa fa-sign-in"></i> Login</a></li>
+                    <li class="nav-item "><a class="nav-link" style="cursor: pointer;" id="loginbtn"><i class="fa fa-sign-in"></i> Login</a></li>
                </ul>
             </div>
         </div>
@@ -126,8 +126,7 @@
                     <img class="img-fluid" src="./img/logo.png">
                 </div>
                 <div class="col-12 col-sm-3 align-self-center">
-                    <a  role="button" class="btn btn-block nav-link btn-warning"
-                    data-toggle="modal" data-target="#reservationModal">
+                    <a  role="button" class="btn btn-block nav-link btn-warning" id="reservebtn">
                     Reserve Table
                     </a>
                 </div>
@@ -350,10 +349,19 @@
            </div>
         </div>
     </footer>
-
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#loginbtn").click(function(){
+                $("#loginModal").modal('show');
+            });
+            $("#reservebtn").click(function(){
+                $("#reservationModal").modal('show');
+            });
+        });
+    </script>
 </body>
 
 </html>

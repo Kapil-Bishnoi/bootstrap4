@@ -51,6 +51,12 @@ body {
     left: 0;
     min-height: 300px;
 }
+.modal-header{
+    background-color: #9457ce;
+}
+.modal-body{
+    background-color: #D1C4E9;
+}
 .navbar-dark {
     background-color: #9457ce;
 }
@@ -58,7 +64,7 @@ body {
 .btn-group {
     margin-bottom: 0px;
 }
-#carousalBtns{
+#carouselBtn{
     right: 0px;
     bottom: 0px;
     position: absolute;
@@ -66,7 +72,7 @@ body {
 }
 
 .form-control {
-    background-color: rgb(213, 212, 255);
+    background-color:white;
 }
 /* .res-table{
     background-color: yellow;
@@ -74,3 +80,16 @@ body {
 .res-btn{
     background-color: rgb(236, 151, 14);
 }
+.map-container-2{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    }
+    .map-container-2 iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    }
