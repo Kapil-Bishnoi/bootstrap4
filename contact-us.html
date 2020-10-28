@@ -10,10 +10,12 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- Bootstrap CSS -->
+    <!-- build:css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <link href="css/styles.css" rel="stylesheet">
+    <!-- endbuild -->
 </head>
 
 <body>
@@ -142,29 +144,43 @@
                <hr>
             </div>
         </div>
-
+        <div class="row">
+            <div class="col-12">
+                <h3>Location Information</h3>
+            </div>
+        </div>
         <div class="row row-content">
-           <div class="col-12 col-sm-6">
-              <h3>Location Information</h3>
-                <div class="offset-sm-1">
+            <div class="col-12 col-sm-5 ">
                    <h5>Our Address</h5>
-                   <address style="font-size: 100%">
-                   121, Clear Water Bay Road<br>
-                   Clear Water Bay, Kowloon<br>
-                   HONG KONG<br>
-                   <i class="fa fa-phone"></i>: +852 1234 5678<br>
-                   <i class="fa fa-fax"></i>: +852 8765 4321<br>
-                   <i class="fa fa-envelope"></i>:
-                   <a href="mailto:confusion@food.net">confusion@food.net</a>
+                    <address style="font-size: 150%">
+		              121, Clear Water Bay Road<br>
+		              Clear Water Bay, Kowloon<br>
+		              HONG KONG<br>
+		              <i class="fa fa-phone"></i>: +852 1234 5678<br>
+		              <i class="fa fa-fax"></i>: +852 8765 4321<br>
+		              <i class="fa fa-envelope"></i>:
+                      <a href="mailto:confusion@food.net">confusion@food.net</a>
                    </address>
-                </div>
-                <div class="btn-group offset-sm-1" role="group">
+                   <div class="btn-group" role="group">
                     <a role="button" class="btn btn-primary" href="tel:9784180855"><i class="fa fa-phone"></i> Call</a>
                     <a role="button" class="btn btn-info" href="#101"><i class="fa fa-skype" ></i> Skype</a>
                     <a role="button" class="btn btn-success" href="mailto:confusion@food.net"><i class="fa fa-envelope-o"></i> Mail</a>
+                  </div>
+            </div>
+            <div class="col-12 col-sm-5 order-first ">
+                <h5>Map of our Location</h5>
+                <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
+                     <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                              style="border:0" allowfullscreen></iframe>
                 </div>
-                <h3 class="mt-4">Send us your Feedback</h3>
-                <form class="mt-4">
+            </div>
+        </div>
+        <div class="row row-content">
+            <div class="col-12">
+              <h3 class="mt-2 mb-2">Send us your Feedback</h3>
+            </div>
+            <div class="col-12 col-md-9">
+                <form>
                     <div class="form-group row">
                         <div class="col-12 col-md-7">
                            <input type="text" class="form-control" id="fullname"name="fullname" placeholder="Full Name">
@@ -177,7 +193,7 @@
                     </div>
                     <div class="form-group row">
                         <div class="col-3 col-md-2">
-                           <input type="tel" class="form-control" id="areacode"name="areacode" placeholder="code">
+                           <input type="tel" class="form-control" id="areacode"name="areacode" placeholder="Area Code">
                         </div>
                         <div class="col-9 col-md-5">
                             <input type="tel" class="form-control" id="telephone"name="telephone" placeholder="Contact Number">
@@ -195,15 +211,11 @@
                         </div>
                     </div>
                 </form>
-           </div>
-           <div class="col-12 col-sm-6">
-                <h5>Map of our Location</h5>
-                <div id="map-container-google-2" class="z-depth-1-half map-container" style="height: 500px">
-                    <iframe src="https://maps.google.com/maps?q=chicago&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
-                      style="border:0" allowfullscreen></iframe>
-                </div>
             </div>
-        </div>
+            <div class="col-12 col-md">
+            </div>
+       </div>
+
     </div>
 
     <footer class="footer" >
@@ -251,19 +263,12 @@
         </div>
     </footer>
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+     <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $("#loginbtn").click(function(){
-                $("#loginModal").modal('show');
-            });
-            $("#reservebtn").click(function(){
-                $("#reservationModal").modal('show');
-            });
-        });
-    </script>
+    <script src="JS/scripts.js"></script>
+    <!-- endbuild -->
 </body>
 
 </html>
