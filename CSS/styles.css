@@ -58,6 +58,12 @@ body {
 .btn-group {
     margin-bottom: 0px;
 }
+#carousalBtns{
+    right: 0px;
+    bottom: 0px;
+    position: absolute;
+    z-index: 1;
+}
 
 .form-control {
     background-color: rgb(213, 212, 255);
